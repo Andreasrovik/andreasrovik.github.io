@@ -1,0 +1,49 @@
+body {
+    background-color: whitesmoke;
+}
+
+
+ul {
+    list-style-type: circle;
+}
+
+#article1 {
+    width: 750px;
+    font-size: 22px;
+    padding:30px;
+}
+
+h1 {
+    text-align: center
+}
+
+#article2 {
+    width: 750px;
+    font-size: 22px;
+    padding:20px;
+}
+
+#article3 {
+    width: 750px;
+    font-size: 25px;
+    padding:30px;
+}
+
+#article4 {
+    width: 750px;
+    font-size: 25px;
+    padding:30px;
+}
+
+#article5 {
+    width: 750px;
+    font-size: 25px;
+    padding:30px;
+}
+
+img {
+    position: relative;
+    width: 400px;
+    height: auto;
+    padding: 50px;
+}

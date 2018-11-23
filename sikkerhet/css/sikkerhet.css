@@ -1,0 +1,49 @@
+body {
+    background-color: whitesmoke;
+}
+
+header{
+    font-size: 250%;
+    text-align: center;
+}
+
+#article1 {
+    width: 750px;
+    font-size: 25px;
+    padding:30px;
+}
+
+#article2 {
+    width: 1000px;
+    font-size: 25px;
+    padding:30px;
+}
+
+#img1 {
+  position: absolute;
+  top:250px;
+  width: 40%;
+  height: auto;
+  left: 810px;
+  border-radius: 15px;
+  box-shadow: 5px 5px rgb(68, 68, 68);
+}
+
+#img2 {
+    background-image: url(../bilder/tyv.png);
+    position: absolute;
+    width: 97px;
+    height: 150px;
+    left: -100px;
+    background-position-x: 8px;
+    animation: sneak 8s infinite linear,
+     run 0.5s infinite steps(6);
+}
+
+@keyframes sneak {
+    100% {left: 110%;}
+}
+
+@keyframes run {
+    100% {background-position-x: 600px;}
+}
