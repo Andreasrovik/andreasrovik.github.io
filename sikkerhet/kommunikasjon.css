@@ -9,6 +9,10 @@ article {
     margin: 60px;
     font-size: 20px;
     text-align: center;
+
+    border-radius: 25px;
+    border: 2px solid black;
+    padding: 17px;
 }
 
 header {
