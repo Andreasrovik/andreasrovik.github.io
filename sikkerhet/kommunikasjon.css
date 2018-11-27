@@ -1,0 +1,56 @@
+body {
+    background-color: whitesmoke
+}
+
+article {
+    position: relative;
+    width: 800px;
+    left: 260px;
+    margin: 60px;
+    font-size: 20px;
+    text-align: center;
+}
+
+header {
+    text-align: center;
+}
+
+h3 {
+position: relative;
+text-align: center; 
+}
+
+footer {
+    position: relative;
+    font-size: 20px;
+    text-align: center;
+    bottom: 20px;
+}
+
+header {
+    position: relative;
+    font-size: 300%;
+    top: 17px;
+    left: 500px;
+    right: 500px;
+
+    border: solid black 2px;
+    border-radius: 20px;
+    border-style: inset; 
+    box-shadow: 5px 5px 30px black;
+  
+    width: 500px;  
+    text-align: center;
+    height: 70px;
+    color: white;
+    text-shadow: 3px 3px 100px blue;
+
+    background-image: linear-gradient(90deg, aqua, rgba(0, 255, 0, 0.733), aqua);
+
+}
+
+a:hover {
+    color: aqua;
+
+    transition: ease-in-out 1s;
+}
