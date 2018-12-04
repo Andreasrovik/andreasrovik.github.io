@@ -1,0 +1,141 @@
+header {
+    position: relative;
+    font-size: 300%;
+    top: 17px;
+    left: 470px;
+    right: 500px;
+
+    border: solid red white 2px;
+    border-radius: 20px;
+    border-style: dashed; 
+    box-shadow: 5px 5px 30px black;
+  
+    width: 500px;  
+    text-align: center;
+    height: 70px;
+    color: white;
+    text-shadow: 3px 3px 100px whitesmoke;
+
+    background-image: linear-gradient(90deg, red, pink, red);
+
+}
+
+#kalender {
+    position: absolute;
+    background-image: url(kalender.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 900px; 
+    height: 600px;
+    top: 120px;
+    left: 270px;
+    border: solid 3px black;
+    display: inline-grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+
+body {
+    background-image: url(snowyy.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.luke {
+    border: solid 1.5px white;
+    padding: 10px;
+    margin: 10px;
+    font-size: 30px;
+    color: red;
+    text-shadow: 1px 1px 1px white;
+    border-radius: 10px;
+}
+
+#vis {
+    width: 100px;
+    height: 100px;
+    border: solid red;
+    display: none;
+    position: absolute;
+    top: 10em;
+    left: 10em;
+}
+
+
+
+
+
+
+
+
+
+
+
+html {
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    color: #fff;
+
+}
+
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+
+
+
+.snowflake {
+    position: absolute;
+    display: block;
+    position: absolute;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    background-image: -webkit-radial-gradient(
+        center,
+        circle farthest-corner,
+        rgba(255, 255, 255, 1) 40%,
+        rgba(255, 255, 255, 0) 100%
+    );
+    background-image: -moz-radial-gradient(
+        center,
+        circle farthest-corner,
+        rgba(255, 255, 255, 1) 40%,
+        rgba(255, 255, 255, 0) 100%
+    );
+    background-image: -ms-radial-gradient(
+        center,
+        circle farthest-corner,
+        rgba(255, 255, 255, 1) 40%,
+        rgba(255, 255, 255, 0) 100%
+    );
+    background-image: radial-gradient(
+        center,
+        circle farthest-corner,
+        rgba(255, 255, 255, 1) 40%,
+        rgba(255, 255, 255, 0) 100%
+    );
+}
+
+#snow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}   
