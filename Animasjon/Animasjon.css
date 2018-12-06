@@ -1,0 +1,39 @@
+
+#brett {
+    position: relative;
+    width: 900px;
+    height: 600px;
+    border: solid gray 1px;
+}
+
+#figur {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    top: 200px;
+    left: 30px;
+    background-image: url(mercedeslogo.jpg);
+    background-position: center;
+    background-size: cover;
+    transform: rotate(1turn);
+    animation: gli 5s infinite linear, roter 1s infinite;
+    animation-iteration-count: infinite;
+}
+
+
+
+@keyframes gli {
+    0% {left:0px; top:0px}
+    25% {left:0px; top:510px}
+    50% {left:810px; top:510px}
+    75% {left:810px; top:0px}
+    100% {left:0px; top:0px ; transform: rotate(5turn)}
+}
+
+
+
+/* """"div id sykkel
+div id bakhjul
+div id forhjul
+position absoulute
+delay /*

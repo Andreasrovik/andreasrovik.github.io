@@ -1,0 +1,48 @@
+body {
+    background-color: aqua;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr
+}
+
+
+main > div {
+    background-color: aqua;
+    width: 600px;
+    height: 340px;
+    margin: 20px;
+    margin-bottom: 20px;
+    background-position: center;
+    background-size: cover;
+
+    border: solid silver 4px;
+    border-radius: 20px;
+    border-style: inset; 
+    box-shadow: 5px 5px 40px black;
+
+}
+
+
+
+#b1 {
+    background-image: url(Landscape1.jpg)
+}
+
+#b2 {
+    background-image: url(Landscape2.jpg)
+}
+
+#b3 {
+    background-image: url(Landscape3.jpg)
+}
+
+#b4 {
+    background-image: url(Landscape4.jpg)
+}
+
+#tittel {
+    text-shadow: 3px 3px 100px blue;
+}
+
