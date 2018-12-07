@@ -1,0 +1,208 @@
+body {
+    background-color: whitesmoke;
+}
+
+audio {
+    position: relative;
+    top: 500px;
+}
+
+#astro {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-image: url(astro.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 800px;
+    height: 477px;
+}
+
+#fjes {
+    position: relative;
+    left: 82px;
+    top: 51px;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    height: 200px;
+    width: 688px;
+}
+
+.fjes {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border: solid yellow 2px;
+    transition: all 1s ease-in-out;
+}
+
+
+  
+.fjes:hover {
+    border-radius:0;  
+    border-radius: 50%;
+}
+
+.fjes:nth-child(n + 11) {
+   left: 13px;
+}
+
+.fjes:nth-child(n + 21) {
+    left: -24px;
+    top: -28px;
+ }
+
+ .fjes:nth-child(n + 24) {
+    left: -1px;
+    top: -13px;
+ }
+
+ .fjes:nth-child(3) {
+    left: -17px;
+    top: 10px;
+ }
+
+ .fjes:nth-child(4) {
+    left: -20px;
+    top: 0px;
+ }
+
+ .fjes:nth-child(5) {
+    left: -20px;
+    top: 10px;
+ }
+
+ .fjes:nth-child(6) {
+    left: -30px;
+    top: 15px;
+ }
+
+ .fjes:nth-child(7) {
+    left: 10px;
+    top: 15px;
+ }
+
+ .fjes:nth-child(8) {
+    left: 10px;
+    top: 15px;
+ }
+
+ .fjes:nth-child(9) {
+    left: 0px;
+    top: 15px;
+ }
+
+ .fjes:nth-child(10) {
+    left: -10px;
+    top: 15px;
+ }
+
+
+ .fjes:nth-child(11) {
+    left: 10px;
+    top: -10px;
+ }
+
+ .fjes:nth-child(12) {
+    left: 10px;
+    top: 0px;
+ }
+
+ .fjes:nth-child(13) {
+    left: 15px;
+    top: 0px;
+ }
+
+ .fjes:nth-child(14) {
+    left: 30px;
+    top: 0px;
+ }
+
+.fjes:nth-child(15) {
+    left: 30px;
+    top: 20px;
+ }
+
+ .fjes:nth-child(16) {
+    left: 10px;
+    top: 0px;
+ }
+
+ .fjes:nth-child(17) {
+    left: 20px;
+    top: 0px;
+ }
+
+ .fjes:nth-child(18) {
+    left: 20px;
+    top: 0px;
+ }
+
+ .fjes:nth-child(19) {
+    left: 20px;
+    top: 0px;
+ }
+
+ .fjes:nth-child(20) {
+    left: 20px;
+    top: 0px;
+ }
+
+ .fjes:nth-child(21) {
+    left: -30px;
+    top: -35px;
+ }
+
+ .fjes:nth-child(22) {
+    left: -30px;
+    top: -35px;
+ }
+
+ .fjes:nth-child(23) {
+    left: -15px;
+    top: -25px;
+ }
+
+ .fjes:nth-child(24) {
+    left: -15px;
+    top: -15px;
+ }
+
+ .fjes:nth-child(25) {
+    left: -10px;
+    top: -15px;
+ }
+
+ .fjes:nth-child(26) {
+    left: -5px;
+    top: -10px;
+ }
+
+ .fjes:nth-child(27) {
+    left: -10px;
+    top: -5px;
+ }
+
+ .fjes:nth-child(28) {
+    left: -10px;
+    top: -15px;
+ }
+
+ .fjes:nth-child(29) {
+    left: -10px;
+    top: -15px;
+ }
+
+ .fjes:nth-child(30) {
+    left: -25px;
+    top: -20px;
+ }
+
+ .bart {
+     border: solid yellow 2px;
+     width: 20px;
+     height: 20px;
+     position: relative;
+     left: 450px;
+     top: 60px;
+ }
