@@ -11,7 +11,7 @@ audio {
     position: absolute;
     top: 10px;
     left: 10px;
-    background-image: url(astro.jpg);
+    background-image: url(../NASA/astro.jpg);
     background-position: center;
     background-repeat: no-repeat;
     width: 800px;
