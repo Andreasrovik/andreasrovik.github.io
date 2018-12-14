@@ -61,10 +61,41 @@ body {
     left: 10em;
 }
 
+.kropp {
+    position: relative;
+    width: 64px;
+    height: 45px;
+    left: 10px;
+    border: solid grey;
+    border-radius: 3px;
+    background-color: gold;
+}
 
+.kropp::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 45px;
+    height: calc(60px - 40px);
+    border: solid goldenrod 5px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom: none;
+    top: -25px;
+    left: 5px;
+}
 
-
-
+.kropp::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 10px;
+    height: 15px;
+    background-color: grey;
+    border-radius: 3px;
+    top: 15px;
+    left: 27px;
+}
 
 
 
