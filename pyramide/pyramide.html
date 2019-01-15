@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pyramide</title>
+    <script src="homebar.js"></script>
+    <script src="pyramide.js"></script>
+    <script src="Digitalklokke.js"></script>
+    <script src="befolkningspyramide.js"></script>
+
+</head>
+
+
+<body>
+    <home-bar username="<digi-time><digi-time>" info="" title="Befolkningspyramider"></home-bar>
+    
+    
+    <pop-pyr id="pyramide" country="Norway" year="1950"></pop-pyr>
+
+    <form action="" id="f">
+        <div>
+            <label for="land">
+                Land
+                <select 
+                name="land" id="land">
+                </select>
+            </label>
+        </div>
+
+        <div>
+            <label for="aar">
+                Årstall<input 
+
+                min="1920"  max="2020" 
+                type="number" id="land">
+            </label>
+        </div>
+        
+        
+        <div>
+            <label for="farge">
+                Farge<input type="color" id="land"></label>
+            </div>
+       
+            <div>
+            <label for="size">
+                 Størrelse
+                 <select name="size" id="size">
+                     <option>Liten</option>
+                     <option>Middels</option>
+                     <option>Stor</option></option>
+                </label>
+
+
+                
+            </div>  
+
+
+
+
+    </form>
+    <script>
+            setup();
+        </script>
+       
+          
+</body>
+</html>

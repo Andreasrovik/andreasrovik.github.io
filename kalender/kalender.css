@@ -99,6 +99,20 @@ body {
 
 
 
+@function cross($back, $main, $detail: $back){
+  @return linear-gradient(90deg, transparent 28%, $main 28%, $main 34%, transparent 34%),
+    linear-gradient(transparent 42%, $detail 42%, $detail 46%, $main 46%, $main 58%, $detail 58%, $detail 62%, transparent 62%),
+    linear-gradient(90deg, $back 25%, $detail 25%, $detail 28%, $main 28%, $main 34%, $detail 34%, $detail 37%, $back 37%);
+}
+
+.flag {
+    @extend %flag;
+    background: cross(red, blue, white);
+}
+
+
+
+
 
 
 
