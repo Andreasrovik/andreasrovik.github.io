@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kakediagram</title>
+    <script src="kakediagram.js"></script>
+    <link rel="stylesheet" href="kakediagram.css">
+</head>
+
+<body>
+    <H1>Pai</H1>
+
+    <div id="kaker">
+    <pie-chart heading="Frokost" width="400" id="frokost"></pie-chart>
+    <pie-chart heading="Middag" width="400" id="middag"></pie-chart>
+    <pie-chart heading="Kvelds" width="400" id="kvelds"></pie-chart>
+
+    </div>
+
+  
+    <script>
+    let frokost = document.getElementById("frokost");  
+    frokost.init ([
+        {label:"mel", color:"orange", value:30},
+        {label:"salt", color:"grey", value:2},
+        {label:"meierismør", color:"yellow", value:5},
+        {label:"vann", color:"blue", value:15},
+        {label:"eple", color:"red", value:20},
+        {label:"sukker", color:"lightgrey", value:16},
+        {label:"kanel", color:"brown", value:5},
+    ]) 
+
+    let middag = document.getElementById("middag");  
+    middag.init ([
+        {label:"mel", color:"orange", value:30},
+        {label:"salt", color:"grey", value:2},
+        {label:"meierismør", color:"yellow", value:5},
+        {label:"vann", color:"blue", value:15},
+        {label:"eple", color:"red", value:20},
+        {label:"sukker", color:"lightgrey", value:16},
+        {label:"kanel", color:"brown", value:5},
+    ]) 
+
+    let kvelds = document.getElementById("kvelds");  
+    kvelds.init ([
+        {label:"mel", color:"orange", value:30},
+        {label:"salt", color:"grey", value:2},
+        {label:"meierismør", color:"yellow", value:5},
+        {label:"vann", color:"blue", value:15},
+        {label:"eple", color:"red", value:20},
+        {label:"sukker", color:"lightgrey", value:16},
+        {label:"kanel", color:"brown", value:5},
+    ]) 
+
+
+    </script>
+
+</body>
+</html>

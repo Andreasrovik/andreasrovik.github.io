@@ -21,12 +21,7 @@ function setup() {
     })
 
 
-
-}
-
-function setup() {
     let pyramide = document.getElementById("pyramide");
-    let inpLand = document.getElementById("land");
     inpLand.addEventListener("change", nyttLand);
     function nyttLand() {
       let land = inpLand.value;

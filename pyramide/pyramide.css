@@ -1,0 +1,16 @@
+#pyramide {
+    position: relative;
+    left: 400px;
+    font-size: 20px;
+}
+
+#f {
+    position: relative;
+    left: 550px;
+    top: 30px;
+    font-size: 20px;
+}
+
+label {
+    position: relative;
+}

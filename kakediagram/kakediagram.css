@@ -1,0 +1,16 @@
+#kaker {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#kaker * {
+    margin: 25px;
+}
+
+h1 {
+    text-align: center;
+}
+
+heading {
+    
+}
