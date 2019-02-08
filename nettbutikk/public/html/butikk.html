@@ -7,9 +7,10 @@
     <script src="../javascript/homebar.js"></script>
     <link rel="stylesheet" href="../css/butikk.css">
     <script src="../../butikk.js"></script>
+    <script src="../js/DbForm.js"></script>
+    <script src="../js/DbSelect.js"></script>
     <title>Butikk</title>
 </head>
-
 
 <body>
 <home-bar title="Nettbutikk" username="Alfred Sweinsteiger"  menu='Til kassen'info="Kampanjer!" >    </home-bar>
@@ -22,6 +23,42 @@
         <div class="varer5"></div>
 
     </div>
+
+    <db-form fields="varenavn,beholdning,basispris" table="vare">
+            <span slot="heading">Registrer vare</span>
+        </db-form>
+
+       
+       
+
+         <db-select>
+        <div class="header">
+          <h1>Din Vare</h1>
+        </div>
+        
+        <div class="row">
+          <div class="col-3 menu">
+            <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            </ul>
+          </div>
+        
+          <div class="col-6">
+            <h1></h1>
+            </div>
+        
+          <div class="col-3 right">
+            <div class="aside">
+           
+            </div>
+          </div>
+        </div>
+        </db-select>
+    
+       
 
    
     <script>

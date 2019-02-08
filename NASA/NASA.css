@@ -36,10 +36,11 @@ audio {
     transition: all 1s ease-in-out;
 }
 
-
+.bart:hover { 
+   border-radius: 50%;
+}
   
-.fjes:hover {
-    border-radius:0;  
+.fjes:hover { 
     border-radius: 50%;
 }
 
