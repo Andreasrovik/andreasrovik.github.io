@@ -12,17 +12,17 @@
              display:none;
            }
            h4 {
-             text-align:center;
-           }
+            text-align:center;
+          }
          </style>
-         <h4>Vareliste</h4>
+         <h4>Handlekorg</h4>
          <div class="liste">
            <slot name="liste"></slot>
-           <button>Gå til kasse</button>
+           <button>Kjøp varene</button>
          </div>
       `;
   
-    class DBSelect extends HTMLElement {
+    class DBKorg extends HTMLElement {
       constructor() {
         super();
         this.datalist =[];
@@ -66,30 +66,18 @@
           let sql = `select ${this.fields} from ${this.table} where ${this.where}`;
           let slot = this._root.querySelector('div.liste slot');
           this.starting = false;
-          this._root.querySelector('button').addEventListener("click", () => {
-             let valgt = Array.from(this.valgt);
-             let items = valgt.map(e => Object.assign({},this.datalist[e.id]));
-             items.forEach(e => delete e.buy);
-             // lagrer alle kjøpte varer i localstorage
-             localStorage.setItem('korg',JSON.stringify(items));
-             this.dispatchEvent(new Event("korg"));        
-          });
           slot.addEventListener('slotchange', async (e) => {
-            let data = await this.select(sql);
+            let data = localStorage.getItem("korg");
             let id = this.getAttribute("liste");
-            let buy = this.getAttribute("buy");
             //*
-            if (data.results) {
+            if (data) {
+              let items = JSON.parse(data);
               let target = document.getElementById(id);
               if (target) {
                 let pattern  = target.innerHTML;
                 console.log(pattern);
                 let s = "";
-                data.results.forEach((linje,idx) => {
-                  this.datalist[idx] = linje;
-                  if (buy) {
-                    linje.buy = `<input id="${idx}" type="checkbox">`;
-                  }
+                items.forEach((linje,idx) => {
                   s += supplant(pattern,linje);
                 });
                 target.innerHTML = s;
@@ -126,6 +114,6 @@
       }
     }
   
-    window.customElements.define("db-select", DBSelect);
+    window.customElements.define("db-korg", DBKorg);
   })();
   
