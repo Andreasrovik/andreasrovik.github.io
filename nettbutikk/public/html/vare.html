@@ -9,24 +9,20 @@
     <script src="../js/Homebar.js"></script>
     <link rel="stylesheet" href="../css/butikk.css">
     <script src="../js/butikk.js"></script>
-    <script src="../js/DbKorg.js"></script>
-    <title>Butikk</title>
+    <script src="../js/DbForm.js"></script>
+    <title>Registrer varer</title>
 </head>
+
 <body>
     <home-bar title="Nettbutikk" info="Kampanje! Salg!" username="Ole Olsen">
     </home-bar>
-    <db-korg heading="Din handlekorg" liste="korg" 
-              table="vare" buy="true" fields="varenavn,basispris" where="1=1">
-        <div slot="liste" id="korg">
-            <div>
-                <img onerror='this.src="../media/noImage.png"' src="../media/{varenavn}.png" alt="{varenavn}">
-                <div class="vare">{varenavn}</div>
-                <div class="pris">Pris {basispris}kr</div>
-            </div>
-        </div>
-    </db-select>
+
+    <db-form heading="Varer" table="vare" fields="varenavn,basispris,beholdning">
+        <div slot="heading">Varer</div>
+    </db-form>
     <script>
         setup();
     </script>
 </body>
+
 </html>

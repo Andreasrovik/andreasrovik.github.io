@@ -1,7 +1,6 @@
 #varer {
   display: flex;
   flex-wrap: wrap;
-  
 }
 
 #varer > div.bilder {
@@ -20,6 +19,7 @@
  box-shadow: 2px 2px 2px gray;
  opacity: 1;
 }
+
 #meny > ul {
   list-style: none;
   margin: 5px;
@@ -48,24 +48,18 @@ db-select {
   min-height: 150px;
 }
 
-#varer {
-    display: flex;
-    position: relative;
-    margin-top: 10px;
-    flex: wrap;
-    border: solid black 2px;
-    height: 400px;
+#kunder {
+ display: flex;
+ flex-wrap: wrap;
 }
 
-.heading {
-  font-size: 50px;
-  text-shadow: 2px white;
+#kunder > li {
+  width: 14em;
 }
 
-@media only screen and (max-width: 750px) {
-  [class*="col-"] {
-    width: 100%;
-  }
+
+#kunder > li > div {
+  margin: 2px;
 }
 
 body {
@@ -121,9 +115,4 @@ body {
     width: 250px;
     border: solid black 2px;
     margin: 20px;
-}
-
-db-form {
-    background-color: whitesmoke;
-    opacity: 0.9;
 }

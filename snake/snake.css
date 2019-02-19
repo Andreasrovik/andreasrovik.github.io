@@ -1,0 +1,16 @@
+:root {
+    --w: 10px;
+}
+
+#brett {
+    display: grid;
+    grid-template-columns: repeat(100, 1fr);
+    width: calc((var(--w) + 2px) * 100 + );
+}
+
+div.rute {
+    width: var(--w);
+    height: (--w);
+    border: solid whitesmoke 1px;
+
+}
