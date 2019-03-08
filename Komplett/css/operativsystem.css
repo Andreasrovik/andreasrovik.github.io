@@ -1,0 +1,87 @@
+body {
+    background-image: url(../media/bakgrunn.jpg);
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+    color: deepskyblue;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px black, 0 0 25px white, 0 0 10px darkblue;
+}
+
+#ytre {
+    position: relative;
+    width: 1400px;
+    height: 300px;
+    top: 50px;
+}
+
+#indre {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    height: 100%;
+}
+
+.inder {
+    border: solid white 2px;
+    border-radius: 10px;
+    margin: 3px;
+}
+
+.inder:nth-child(1) {
+    background-image: url(../media/windows.png);
+    background-size: cover;
+    background-color: black;
+    background-position-y: -70px;
+}
+
+.inder:nth-child(2) {
+    background-image: url(../media/ios.png);
+    background-size: 400px;
+    background-color: black;
+    background-position-y: -60px;
+    background-position-x: 30px;
+}
+
+.inder:nth-child(3) {
+    background-image: url(../media/linux.png);
+    background-size: 450px;
+    background-color: white;
+    background-position-x: 20px;
+    background-position-y: -50px;
+}
+
+#yter {
+    position: relative;
+    width: 1400px;
+    height: 200px;
+    top: 50px;
+}
+
+#info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    height: 100%;
+}
+
+.halla {
+    border: solid white 2px;
+    border-radius: 10px;
+    margin: 3px;
+    color: white;
+    font-size: 20px;
+    text-shadow: 2px 2px 2px black, 0 0 25px black, 0 0 10px black;
+}
+
+
+article {
+    color: white;
+    text-shadow: 2px 2px 2px black, 0 0 25px black, 0 0 10px black;
+    position: absolute;
+    top: 750px;
+    margin: 20px;
+    font-size: 20px;
+}

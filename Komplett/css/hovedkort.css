@@ -1,0 +1,95 @@
+
+body {
+    background-image: url(../media/bakgrunn.jpg);
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+    color: deepskyblue;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px black, 0 0 25px white, 0 0 10px darkblue;
+}
+
+#ytre {
+    position: relative;
+    width: 1400px;
+    height: 300px;
+    top: 50px;
+}
+
+#indre {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    width: 100%;
+    height: 100%;
+}
+
+.inder {
+    border: solid white 2px;
+    border-radius: 10px;
+    margin: 3px;
+}
+
+.inder:nth-child(1) {
+    background-image: url(../media/MSIZ370.png);
+    background-size: 270px;
+    background-color: black;
+}
+
+.inder:nth-child(2) {
+    background-image: url(../media/ASUS.png);
+    background-size: 270px;
+    background-color: black;
+}
+
+.inder:nth-child(3) {
+    background-image: url(../media/GB.png);
+    background-size: 270px;
+    background-color: black;
+}
+
+.inder:nth-child(4) {
+    background-image: url(../media/raspberry.png);
+    background-size: 270px;
+    background-color: black;
+}
+
+.inder:nth-child(5) {
+    background-image: url(../media/MSIarctic.png);
+    background-size: 270px;
+    background-color: black;
+}
+
+#yter {
+    position: relative;
+    width: 1400px;
+    height: 200px;
+    top: 50px;
+}
+
+#info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    width: 100%;
+    height: 100%;
+}
+
+.halla {
+    border: solid white 2px;
+    border-radius: 10px;
+    margin: 3px;
+    color: white;
+    font-size: 20px;
+    text-shadow: 2px 2px 2px black, 0 0 25px black, 0 0 10px black;
+}
+
+
+article {
+    color: white;
+    text-shadow: 2px 2px 2px black, 0 0 25px black, 0 0 10px black;
+    position: absolute;
+    top: 850px;
+    margin: 20px;
+    font-size: 20px;
+}

@@ -1,0 +1,190 @@
+body {
+    background-image: url(../media/bakgrunn.jpg);
+    background-size: fill;
+}
+
+h1 {
+    text-align: center;
+    color: deepskyblue;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px black, 0 0 25px white, 0 0 10px darkblue;
+}
+
+#ytre {
+    position: relative;
+    width: 1400px;
+    height: 300px;
+    top: 50px;
+}
+
+#indre {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    width: 100%;
+    height: 100%;
+}
+
+.inder {
+    border: solid white 2px;
+    border-radius: 10px;
+    margin: 3px;
+}
+
+.inder:nth-child(1) {
+    background-image: url(../media/i3.png);
+    background-size: 350px;
+    background-color: black;
+    background-position-x: -40px;
+}
+
+.inder:nth-child(2) {
+    background-image: url(../media/i5.png);
+    background-size: 270px;
+    background-color: black;
+    background-position-y: 10px;
+}
+
+.inder:nth-child(3) {
+    background-image: url(../media/i7.png);
+    background-size: 400px;
+    background-color: black;
+    background-position-x: -60px;
+    background-position-y: 10px;
+}
+
+.inder:nth-child(4) {
+    background-image: url(../media/i9.png);
+    background-size: 350px;
+    background-color: black;
+    background-position-x: -40px;
+    background-position-y: -30px;
+}
+
+.inder:nth-child(5) {
+    background-image: url(../media/amd.png);
+    background-size: 270px;
+    background-color: black;
+    background-position-y: 10px;
+}
+
+#yter {
+    position: relative;
+    width: 1400px;
+    height: 200px;
+    top: 50px;
+}
+
+#info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    width: 100%;
+    height: 100%;
+}
+
+.halla {
+    border: solid white 2px;
+    border-radius: 10px;
+    margin: 3px;
+    color: white;
+    font-size: 18px;
+    text-shadow: 2px 2px 2px black, 0 0 25px black, 0 0 10px black;
+}
+
+
+#ytre2 {
+    position: relative;
+    width: 1400px;
+    height: 300px;
+    top: 50px;
+}
+
+#indre2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    width: 100%;
+    height: 100%;
+}
+
+.inder2 {
+    border: solid white 2px;
+    border-radius: 10px;
+    margin: 3px;
+}
+
+.inder2:nth-child(1) {
+    background-image: url(../media/trident.png);
+    background-size: 350px;
+    background-color: black;
+    background-position-x: -40px;
+}
+
+.inder2:nth-child(2) {
+    background-image: url(../media/kingston.png);
+    background-size: 270px;
+    background-color: black;
+    background-position-y: 10px;
+}
+
+.inder2:nth-child(3) {
+    background-image: url(../media/hyperx2.png);
+    background-size: 400px;
+    background-color: black;
+    background-position-x: -60px;
+    background-position-y: 10px;
+}
+
+.inder2:nth-child(4) {
+    background-image: url(../media/Hyperx1.png);
+    background-size: 350px;
+    background-color: black;
+    background-position-x: -40px;
+    background-position-y: -30px;
+}
+
+.inder2:nth-child(5) {
+    background-image: url(../media/rgb.png);
+    background-size: 270px;
+    background-color: black;
+    background-position-y: 10px;
+}
+
+#yter2 {
+    position: relative;
+    width: 1400px;
+    height: 200px;
+    top: 50px;
+}
+
+#info2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    width: 100%;
+    height: 100px;
+}
+
+.halla2 {
+    border: solid white 2px;
+    border-radius: 10px;
+    margin: 3px;
+    color: white;
+    font-size: 18px;
+    text-shadow: 2px 2px 2px black, 0 0 25px black, 0 0 10px black;
+}
+
+article {
+    color: white;
+    text-shadow: 2px 2px 2px black, 0 0 25px black, 0 0 10px black;
+    position: absolute;
+    top: 1300px;
+    margin: 20px;
+    font-size: 20px;
+}
+
+#article1 {
+    color: white;
+    text-shadow: 2px 2px 2px black, 0 0 25px black, 0 0 10px black;
+    position: absolute;
+    top: 300px;
+    margin: 20px;
+    font-size: 20px;
+}

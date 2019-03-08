@@ -1,16 +1,36 @@
 :root {
-    --w: 10px;
+    --w: 5px;
 }
+
 
 #brett {
     display: grid;
     grid-template-columns: repeat(100, 1fr);
-    width: calc((var(--w) + 2px) * 100 + );
+    width: calc((var(--w) + 2px) * 100);
+    align-self: center;
+    border: solid red 1px;
+
 }
 
-div.rute {
-    width: var(--w);
-    height: (--w);
-    border: solid whitesmoke 1px;
+#ramme {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+}
 
+
+
+div.rute {
+  width: var(--w);
+  height: var(--w);
+  border: solid whitesmoke 1px;
+}
+
+div.rute.sneek {
+    background-color: red;
+}
+
+div.rute.food {
+    background-color: blue;
 }

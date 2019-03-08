@@ -1,4 +1,4 @@
-// @ts-check
+ // @ts-check
 
 class HomeBar extends HTMLElement {
 
