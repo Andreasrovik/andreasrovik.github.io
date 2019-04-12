@@ -1,0 +1,227 @@
+body {
+    background-color: rgb(243, 241, 131)
+}
+
+audio {
+    position: relative;
+    left: 550px;
+}
+
+#egg {
+    display: block;
+    width: 100px;
+    height: 140px;
+    border-radius: 400px;
+    border: solid black 1px;
+    background-color: white;
+    position: relative;
+    top: 300px;
+    left: 650px;
+    opacity: 1;
+    animation: crack4 1s linear forwards 3s;
+}
+
+#crack1 {
+    display: block; 
+    content: "";
+    width: 3px;
+    height: 45px;
+    border: solid black 0,5px;
+    background-color: black;
+    position: relative;
+    left: 15px;
+    top: 50px;
+    transform: rotate(50deg);
+    opacity: 0;
+    animation: crack2 2s linear forwards;
+}
+
+#crack2 {
+    display: block; 
+    content: "";
+    width: 3px;
+    height: 45px;
+    border: solid black 0,5px;
+    background-color: black;
+    position: relative;
+    left: 49px;
+    top: 6px;
+    transform: rotate(-50deg);
+    opacity: 0;
+    animation: crack1 2s linear forwards 1s;
+}
+
+#crack3 {
+    display: block; 
+    content: "";
+    width: 3px;
+    height: 45px;
+    border: solid black 0,5px;
+    background-color: black;
+    position: relative;
+    left: 83px;
+    top: -42px;
+    transform: rotate(50deg);
+    opacity: 0;
+    animation: crack1 2s linear forwards 2s;
+}
+
+
+
+@keyframes crack1 {
+    100% {opacity: 1;}
+}
+
+@keyframes crack2 {
+    100% {opacity: 1;}
+}
+
+@keyframes crack3 {
+    100% {opacity: 1;}
+}
+
+@keyframes crack4 {
+    100% {opacity: 0;}
+}
+
+
+.wrapper {
+	position: absolute;
+	width: 9rem;
+	height: 9rem;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+.wrapper:before {
+	content: '';
+	position: absolute;
+	left: 64%;
+	top: -2%;
+	width: 1.5rem;
+	height: 1.5rem;
+	border-radius: 50%;
+    background: #fd9653;
+    opacity: 0;
+    animation: crack3 1s linear forwards 4s;
+}
+.wrapper:after {
+	content: '';
+	position: absolute;
+	left: 45%;
+	top: 99%;
+	width: 1rem;
+	height: 1rem;
+	transform: skewX(10deg);
+	background: linear-gradient(to left, #ffeb8c 15%, transparent 20%, transparent 80%, #ffeb8c 85%);
+}
+.chicken {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	overflow: hidden;
+	background: transparent;
+    transform: rotate(-45deg);
+    opacity: 0;
+    animation: crack3 1s linear forwards 4s;
+}
+.chicken:before {
+	content: '';
+	position: absolute;
+	width: 37%;
+	height: 37%;
+	background: linear-gradient(to left, #ebe1d8 26%, #fff 26%, #fff 35%, #ebe1d8 35%, #ebe1d8 61%, #fff 61%, #fff 70%, #ebe1d8 70%);
+	left:0;
+	top: 0;
+}
+.chicken .body {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	top: 37%;
+	background: #fff;
+}
+.chicken .body:after {
+	content: '';
+	position: absolute;
+	width: 30%;
+	height: 30%;
+	background: #fff;
+	border-bottom: 0.25rem solid #ebe1d8;
+	border-left: 0.25rem solid #ebe1d8;
+	border-radius: 0 0 0 100%;
+	left: 23%;
+	top: 0;
+	transform-origin: 100% 0;
+}
+.chicken .body:before {
+	content: '';
+	position: absolute;
+	width: 7%;
+	height: 7%;
+	background: #fd9653;
+	left: 97%;
+	transform: rotate(15deg);
+    z-index: 1;
+    
+}
+.chicken .body .face {
+	position: absolute;
+	border: 0.25rem solid;
+	border-color: #dac898 #dac898 #ceaf80 #ceaf80;
+	left: 80%;
+	top: 15%;
+}
+.chicken .body .face:before,
+.chicken .body .face:after {
+	content: '';
+	width: 0;
+	height: 0;
+	position: absolute;
+	border: 0.18rem solid #5f5458;
+	border-radius: 50%;
+}
+.chicken .body .face:before {
+	top: -1rem;
+}
+.chicken .body .face:after {
+	left: 0.64rem;
+	top: -0.36rem;
+}
+
+@keyframes wing {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(90deg);
+	}
+}
+@keyframes jump {
+	from {
+		top: 50%;
+	}
+	to {
+		top: 49%;
+	}
+}
+.wrapper:hover {
+	animation: jump 0.1s ease-out infinite alternate;
+}
+.wrapper:hover .chicken .body:after {
+	animation: wing 0.07s linear infinite alternate;
+}
+.wrapper:hover .chicken .body .face:before,
+.wrapper:hover .chicken .body .face:after {
+	width: 0.25em;
+	height: 0.25em;
+	border-width: 0.13rem;
+}
+.wrapper:hover .chicken .body .face:before {
+	top: -1.1rem;
+	left: -0.1rem;
+}
+.wrapper:hover .chicken .body .face:after {
+	left: 0.54rem;
+	top: -0.46rem;
+} 
