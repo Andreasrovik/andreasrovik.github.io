@@ -1,0 +1,197 @@
+body {
+    background-color: whitesmoke;
+    margin: 8mm;
+}
+
+#kortstokk {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-right: 20px;
+    
+}
+
+span1 {
+    position: absolute;
+    font-size: 3em;
+    color: red;
+    margin: 5px;
+    font-family: 'Times New Roman';
+}
+
+span2 {
+    position: absolute;
+    font-size: 3em;
+    color: red;
+    margin-left: 180px;
+    margin-top: 280px;
+    transform: rotate(180deg);
+    font-family: 'Times New Roman';
+}
+
+.ruter {
+    display: block;
+    background-color: red;
+    position: relative;
+    width: 18mm;
+    height: 18mm;
+    top: calc(50% - 9mm);
+    left: 18mm;
+    transform: rotate(45deg);
+}
+
+.ruterA {
+    display: block;
+    content: "";
+    border: solid black 3px;
+    border-radius: 20px;
+    height: 89mm;
+    width: 57mm;
+    margin-bottom: 20px;
+    box-shadow: lightgray -3px 3px;
+
+}
+
+.ruter2 {
+    display: block;
+    content: "";
+    border: solid black 3px;
+    border-radius: 20px;
+    height: 89mm;
+    width: 57mm;
+    margin-bottom: 20px;
+    box-shadow: lightgray -3px 3px;
+}
+
+.ruter3 {
+    display: block;
+    content: "";
+    border: solid black 3px;
+    border-radius: 20px;
+    height: 89mm;
+    width: 57mm;
+    margin-bottom: 20px;
+    box-shadow: lightgray -3px 3px;
+}
+
+.ruter4 {
+    display: block;
+    content: "";
+    border: solid black 3px;
+    border-radius: 20px;
+    height: 89mm;
+    width: 57mm;
+    margin-bottom: 20px;  
+    box-shadow: lightgray -3px 3px;
+}
+
+.ruter5 {
+    display: block;
+    content: "";
+    border: solid black 3px;
+    border-radius: 20px;
+    height: 89mm;
+    width: 57mm;
+    margin-bottom: 20px;
+}
+
+.ruter6 {
+    display: block;
+    content: "";
+    border: solid black 3px;
+    border-radius: 20px;
+    height: 89mm;
+    width: 57mm;
+    margin-bottom: 20px;
+    box-shadow: lightgray -3px 3px;
+}
+
+.ruter7 {
+    display: block;
+    content: "";
+    border: solid black 3px;
+    border-radius: 20px;
+    height: 89mm;
+    width: 57mm;
+    margin-bottom: 20px;
+    box-shadow: lightgray -3px 3px;
+}
+
+.ruter8 {
+    display: block;
+    content: "";
+    border: solid black 3px;
+    border-radius: 20px;
+    height: 89mm;
+    width: 57mm;
+    margin-bottom: 20px;
+    box-shadow: lightgray -3px 3px;
+}
+
+.ruter9 {
+    display: block;
+    content: "";
+    border: solid black 3px;
+    border-radius: 20px;
+    height: 89mm;
+    width: 57mm;
+    margin-bottom: 20px;
+    box-shadow: lightgray -3px 3px;
+}
+
+.ruterA:hover {
+    transition: ease-in-out 1s;
+    background-image: url(../kortstokk/card.jpg);
+    background-size: cover;
+}
+
+.ruter2:hover {
+    transition: ease-in-out 1s;
+    background-image: url(../kortstokk/card.jpg);
+    background-size: cover;
+}
+
+.ruter3:hover {
+    transition: ease-in-out 1s;
+    background-image: url(../kortstokk/card.jpg);
+    background-size: cover;
+}
+
+.ruter4:hover {
+    transition: ease-in-out 1s;
+    background-image: url(../kortstokk/card.jpg);
+    background-size: cover;
+}
+
+.ruter5:hover {
+    transition: ease-in-out 1s;
+    background-image: url(../kortstokk/card.jpg);
+    background-size: cover;
+}
+
+.ruter6:hover {
+    transition: ease-in-out 1s;
+    background-image: url(../kortstokk/card.jpg);
+    background-size: cover;
+}
+
+.ruter7:hover {
+    transition: ease-in-out 1s;
+    background-image: url(../kortstokk/card.jpg);
+    background-size: cover;
+}
+
+.ruter8:hover {
+    transition: ease-in-out 1s;
+    background-image: url(../kortstokk/card.jpg);
+    background-size: cover;
+}
+
+.ruter9:hover {
+    transition: ease-in-out 1s;
+    background-image: url(../kortstokk/card.jpg);
+    background-size: cover;
+}
+
+@keyframes ruter {
+    100%{opacity: 0;}
+}
