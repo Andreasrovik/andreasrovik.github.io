@@ -10,6 +10,18 @@ body {
     
 }
 
+.ruter.bakside {
+    background-color: blue;
+}
+
+.ruter.bakside div {
+    display: none;
+}
+
+.ruter.bakside:hover span {
+    display: inline;
+}
+
 span1 {
     position: absolute;
     font-size: 3em;
@@ -17,6 +29,8 @@ span1 {
     margin: 5px;
     font-family: 'Times New Roman';
 }
+
+
 
 span2 {
     position: absolute;
@@ -140,55 +154,46 @@ span2 {
 
 .ruterA:hover {
     transition: ease-in-out 1s;
-    background-image: url(../kortstokk/card.jpg);
     background-size: cover;
 }
 
 .ruter2:hover {
     transition: ease-in-out 1s;
-    background-image: url(../kortstokk/card.jpg);
     background-size: cover;
 }
 
 .ruter3:hover {
     transition: ease-in-out 1s;
-    background-image: url(../kortstokk/card.jpg);
     background-size: cover;
 }
 
 .ruter4:hover {
     transition: ease-in-out 1s;
-    background-image: url(../kortstokk/card.jpg);
     background-size: cover;
 }
 
 .ruter5:hover {
     transition: ease-in-out 1s;
-    background-image: url(../kortstokk/card.jpg);
     background-size: cover;
 }
 
 .ruter6:hover {
     transition: ease-in-out 1s;
-    background-image: url(../kortstokk/card.jpg);
     background-size: cover;
 }
 
 .ruter7:hover {
     transition: ease-in-out 1s;
-    background-image: url(../kortstokk/card.jpg);
     background-size: cover;
 }
 
 .ruter8:hover {
     transition: ease-in-out 1s;
-    background-image: url(../kortstokk/card.jpg);
     background-size: cover;
 }
 
 .ruter9:hover {
     transition: ease-in-out 1s;
-    background-image: url(../kortstokk/card.jpg);
     background-size: cover;
 }
 

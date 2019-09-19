@@ -1,0 +1,96 @@
+:root {
+    --bredde: 40px;
+}
+
+h1 {
+    color: yellow;
+    position: relative;
+    top: 670px;
+    left: 600px;
+}
+
+body {
+    background-image: url("../../../ITvg2/419688.jpg");
+    background-size: cover;
+}
+
+#brett {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    width: calc(16 * (var(--bredde) + 2px));
+    position: absolute;
+    top: 10%;
+    left: 25%;
+    border: solid yellow 5px;
+    background-image: url("../we.png");
+}
+
+#brett > div {
+    width: var(--bredde);
+    height: var(--bredde);
+    background-color: red;
+}
+
+#poeng {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: calc(16 * (var(--bredde) + 2px));
+    background-image: linear-gradient(to right, rgba(255,0,0,0.7), rgba(255,255,0,0.7),
+    rgba(255,0,0,0.7));
+    font-size: 3em;
+    position: relative;
+    top: 5%;
+    left: 25%;
+    border: solid yellow 3px;
+    align-items: center;
+}
+
+
+
+#poeng > div {
+    width: calc(3 * (var(--bredde) + 2px));
+    height: 64px;
+    color: black;
+    margin-left: 45px;
+}
+
+div.rute {
+    position: relative;
+    width: var(--bredde);
+    height: var(--bredde);
+    margin: 1px;
+    background-color: gray;
+    color: yellow;
+    opacity: 0.9;
+    text-align: center;
+}
+
+
+div.rute.visible {
+    background-color: aqua;
+    font-size: 1.5em;
+    position: relative;
+}
+
+
+div.visible.rute:after {
+    content: attr(data-n);
+    position: absolute;
+    left:0;
+    top:0;
+}
+
+div.visible.rute[data-n="0"]:after {
+    content: " ";
+    position: absolute;
+    left:0;
+    top:0;
+}
+
+div.visible.rute[data-n="8"]:after {
+    content: "O";
+    position: absolute;
+    left:0;
+    top:0;
+}
+
